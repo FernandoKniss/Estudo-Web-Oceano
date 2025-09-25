@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oceanos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Oceano</title>
 </head>
+
 <body>
+  <header>
+    <h1>Oceano</h1>
 
-    <h1>Oceanos</h1>
-
-    <div>
-        <button>500mt</button>
-        <button>1km</button>
-        <button>2km</button>
-        <button>3km</button>
-        <button>4km</button>
-
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#0mt" class="button">0 - 200mt</a>
+        <a href="#200mt" class="button">200 - 1.000mt</a>
+        <a href="#1000mt" class="button">1.000 - 4.000mt</a>
+        <a href="#4000mt" class="button">4.000- 6.000mt</a>
+        <a href="#6000mt" class="button">Acima de 6.000</a>
+        <a href="#fenda" class="button">Fenda do Bíquini</a>
+      </div>
     </div>
-    
+
+  </header>
+
+  <main>
+
+    <div id="0mt" class="container">
+      <h2>Oceano de 0 à 200 metros de profundidade</h2>
+    </div>
+
+    <div id="200mt" class="container">
+      <h2>Oceano de 200 à 1.000 metros de profundidade</h2>
+    </div>
+
+    <div id="1000mt" class="container">
+      <h3>Oceano de 1.000 à 4.000 metros de profundidade</h3>
+    </div>
+
+    <div id="4000mt" class="container">
+      <h2>Oceano de 4.000 à 6.000 metros de profundidade</h2>
+    </div>
+
+    <div id="6000mt" class="container">
+      <h2>Oceano acima de 6.000 metros de profundidade</h2>
+    </div>
+
+    <div id="fenda" class="container">
+      <h2>Oceano onde ninguém chegou</h2>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por nós mesmos</p>
+  </footer>
 </body>
+
 </html>

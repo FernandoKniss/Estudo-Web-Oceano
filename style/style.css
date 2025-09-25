@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/img/oceano.jpg');
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  background-attachment: fixed;
+  /* Fixa a imagem */
+  background-size: cover;
+  /* Garante que a imagem cubra todo o elemento */
+  background-position: center;
+  /* Centraliza a imagem */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  color: aliceblue;
+  font-family: fantasy;
+  font-size: 50px;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  /* Permite posicionar o conteúdo depois */
+  display: inline-block;
+  /* Para que o menu não ocupe toda a largura */
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  /* Indica que o elemento é clicável ou interativo */
+}
+
+.dropdown-content {
+  display: none;
+  /* Esconde o menu por padrão */
+  position: absolute;
+  /* Posiciona o menu em relação ao contêiner */
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* Sombra para dar profundidade */
+  z-index: 1;
+  /* Garante que o menu apareça por cima de outros elementos */
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  padding: 30px 40px;
+  text-decoration: none;
+  display: block;
+  /* Para que cada link ocupe uma linha */
+}
+
+.dropdown-content a:hover {
+
+  background-color: rgba(0, 255, 255, 0.4);
+  /* Efeito ao passar o rato sobre os links do menu */
+}
+
+/* Mostra o menu suspenso quando o rato está sobre o contêiner do dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  color: black;
+  text-align: center;
+  padding: 50px;
+  flex-grow: 1;
+  margin-top: 80px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 80%;
+  height: 95vh;
+  position: relative;
+  left: 15%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 auto;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
