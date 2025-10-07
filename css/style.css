@@ -1,0 +1,155 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+position: sticky;
+top: 0;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: center;
+height: 80px;
+padding: 0 20px;
+background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+@font-face {
+    font-family: "Spongeboy";
+    src: url("fonts/Spongeboy Me Bob.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+background-image:url('../img/sunlight-zone.png') ;
+font-family: Arial, Helvetica, sans-serif;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 0;
+}
+
+aside {
+    position: fixed;
+    color: #fff;
+    padding: 10px;
+}   
+
+.menu details summary {
+    list-style: none;       /* remove arrow */
+    cursor: pointer;
+    background: black;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    font-family: inherit;
+    }
+
+.menu details[open] summary {
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu a {
+    display: block;
+    padding: 1.5rem 1rem;
+    margin-top: 0.5rem;
+    background: rgba(0,250,250,0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.menu a:hover {
+    background: rgba(0,250,250,0.6);
+}
+
+.sections {
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    background-position:center;
+    font-family:sans-serif;
+}
+
+#section1{
+    background-image:url('../img/sunlight-zone.png') ;
+}
+
+#section2{
+    background-image:url('../img/twilight-zone.jpeg') ;
+}
+
+#section3{
+    background-image:url('../img/midnight-zone.jpeg') ;
+}
+
+#section4{
+    background-image:url('../img/abyssal-zone.jpeg') ;
+}
+
+#section5{
+    background-image:url('../img/hadal-zone.png') ;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 55px;
+    color: #fff;
+}
+
+.texts {
+    position: absolute;
+    width: 70%;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.floating-box {
+    width: 250px;
+    height: 125px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: diagonalFloat 20s infinite linear;
+    transform-origin: center; /* flip around center */
+}
+
+.floating-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes diagonalFloat {
+    0%   { transform: translate(0, 0) scaleX(1); }
+    39%  { transform: translate(calc(100vw - 200px), calc(100vh - 100px)) scaleX(1); }
+    40%  { transform: translate(calc(100vw - 200px), calc(100vh - 100px)) scaleX(-1); }
+    75%  { transform: translate(0, calc(100vh - 80px))  scaleX(-1); }
+    76%  { transform: translate(0, calc(100vh - 80px))  scaleX(-1) rotate(-90deg); }
+    99%  { transform: translate(0, 0) scaleX(-1) rotate(-90deg); }
+    100% { transform: translate(0, 0) scaleX(1); }
+}
+
+footer {
+    background-image:url('../img/hadal-zone.png') ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 auto;
+    font-size: 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
